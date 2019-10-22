@@ -7,9 +7,10 @@ permalink: /404.html
     <title>Redirecting...</title>
     <script>
       function redirect() {
-       let gURL = (window.location).split(".io/");
-       gURL = currentURL.pop();
-        window.location = gURL;
+        new String gURL (window.location);
+        gURL = gURL.split(".io/")
+        gURL = gURL.pop();
+        window.location = `https://theamazingavery.github.io/${gURL}`;
       }
     </script>
   </head>
