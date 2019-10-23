@@ -5,16 +5,17 @@ permalink: /404.html
 <html>
   <head>
     <title>Redirecting...</title>
+  </head>
+  <body>
     <script>
       function redirect() {
-        new String gURL (window.location);
+        let gURL = `${window.location}`;
         gURL = gURL.split(".io/")
         gURL = gURL.pop();
         window.location = `https://theamazingavery.github.io/${gURL}`;
       }
+      
+      redirect();
     </script>
-  </head>
-  <body>
-    <script>redirect()</script>
   </body>
 </html>
