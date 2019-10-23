@@ -8,10 +8,9 @@ permalink: /404.html
   </head>
   <body>
     <script>
-        let gURL = `${window.location}`;
-        gURL = gURL.split(".io/")
-        gURL = gURL.pop();
-        window.location = `https://theamazingavery.github.io/${window.location.split(".io/").pop()}`;
+        let gURL = `${window.location}`.split(".io/").pop();
+        gURL = gURL;
+        window.location = `https://theamazingavery.github.io/${gURL}`;
     </script>
   </body>
 </html>
